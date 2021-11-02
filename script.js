@@ -29,7 +29,6 @@ class PigGame {
     this.dice.src = `./dice-${dice}.png`;
 
     if (dice === 1) {
-      // console.log(this.#players[currentPlayer]);
       this.#resetScoreAndCurrentPlayer.call(
         this.#players[currentPlayer],
         false
@@ -56,7 +55,6 @@ class PigGame {
     this.#updateUi(currentPlayer);
     this.#switchPlayers();
     this.#saveGame();
-    console.log(this.#players);
   }
   #newGame() {
     this.#resetScoreAndCurrentPlayer.call(this.#players[0]);
@@ -87,7 +85,6 @@ class PigGame {
     this.#isPLaying = false;
     //prettier-ignore
     document.querySelector(`.player--${currentPlayer}`).classList.add('player--winner');
-    console.log(`Winner: ${currentPlayer}`);
   }
   #updateUi(currentUser, all = true) {
     //prettier-ignore
@@ -117,7 +114,6 @@ class PigGame {
     this.#clearUi();
     //prettier-ignore
     document.querySelector(`.player--${this.#players.currentPlayer}`).classList.add('player--active');
-    console.log(this.#players);
   }
 }
 
