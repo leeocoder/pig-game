@@ -1,3 +1,4 @@
 # pig-game
 Jogo de Dados
-Link para jogar: https://leeodesign.github.io/pig-game/
+HTML, CSS e Javascript
+Link para jogar: https://leeocoder.github.io/pig-game/
